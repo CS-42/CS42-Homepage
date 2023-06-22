@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(0, 0, 0);
+  height: 18.5vh;
+  
+}
+ul {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  padding-top: 4.5vh;
+}
+ul li {
+  display: inline-block;
+  padding: 12px;
+  list-style-type: none;
+  font-size: 1.1em;
+  font-family: "Press Start 2P", cursive;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  float: left;
+}
+@media screen and (min-width:1060px) {
+  header nav .menu {
+    display: none;
+  }
+}
+@media screen and (max-width:1060px) {
+  .menubtn {
+    background-color: rgb(0, 0, 0);
+    
+  }
+  .menu {
+    position: relative;
+    float: right;
+    margin-right: 85px;
+    margin-top: -40px;
+    font-family: "Press Start 2P", cursive;
+  }
+  .items {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 5px rgb(25, 161, 20);
+    background-color: black;
+    transition: all 0.6s ease-in-out;
+    padding-right: 3vw;
+  }
+  .items a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 22px;
+
+  }
+  .items a:hover {
+    background-color: rgb(17, 177, 78);
+  }
+  .menu:hover .items {
+    display: block;
+  }
+  ul li a {
+    display: none;
+  }
+}
+
+.home {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12.5vh;
+}
+.intro h1 {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+.b1 {
+  background-color: rgb(67, 179, 67);
+  height: 0.5vh;
+}
+.b2 {
+  background-color: rgb(67, 179, 67);
+  height: 0.5vh;
+}
+.about {
+  background-color: black;
+  height: 80vh;
+  padding: 10.5vh;
+
+}
+.about p {
+  color: white;
+  font-family: "Orbitron", cursive;
+  font-size: 1.3em;
+  border-radius: 2px;
+  padding: 2vh;
+}
+  
+.b3 {
+  background-color: rgb(67, 179, 67);
+  height: 0.5vh;
+}
+
+footer {
+  padding: 5vh;
+  background-color: black;
+  height: 10vh;
+}
+.socials{
+  background-color: black ;
+  padding: 5vh;
+  height: 80vh;
+}
+.socials h1{
+  color: white;
+  font-family: "Orbitron", cursive;
+  padding-bottom: 10vh;
+
+}
+footer p{
+  color: white;
+}
+.b4 {
+  background-color: rgb(67, 179, 67);
+  height: 0.5vh;
+}
+.socials .gt{
+  float:right;
+  color: white;
+  height: 24vh;
+  width: 40%;
+  
+  
+}
+.socials .gt p{
+  padding: 6vh;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.dc p{
+  padding: 6vh;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.socials .dc{
+  color: white;
+  height: 24vh;
+  width: 40%;
+  float: left;
+}
+@media screen and (max-width:650px) {
+  .socials .gt{
+    height: 40vh;
+    
+}
+.socials .dc{
+  height: 40vh;
+}
+}
