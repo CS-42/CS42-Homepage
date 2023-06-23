@@ -9,6 +9,8 @@
 header {
   background-color: rgb(0, 0, 0);
   height: 18.5vh;
+  position: sticky;
+  top:0px
   
 }
 ul {
@@ -19,10 +21,16 @@ ul {
 }
 ul li {
   display: inline-block;
-  padding: 12px;
+  padding: 18px;
   list-style-type: none;
   font-size: 1.1em;
   font-family: "Press Start 2P", cursive;
+}
+ul li a:hover{
+    background-color: rgb(17, 177, 78);
+    border: 2px solid rgb(0, 128, 111);
+    border-radius: 3px;
+    height: 1.3em;
 }
 ul li a {
   text-decoration: none;
@@ -85,22 +93,41 @@ ul li a {
   padding: 12.5vh;
 }
 .intro h1 {
-  color: white;
   font-family: "Orbitron", sans-serif;
+  animation: typeanimate 10s infinite ease-in-out;
+}
+@keyframes typeanimate {
+  0%{
+    color: white;
+
+  }
+  40%{
+    color: yellowgreen;
+  }
+  50%{
+    color: rgb(52, 255, 52);
+  }
+  100%{
+    color:white
+  }
+
 }
 .b1 {
   background-color: rgb(67, 179, 67);
   height: 0.5vh;
+  animation: infinite 10s blink;
 }
 .b2 {
   background-color: rgb(67, 179, 67);
   height: 0.5vh;
+  animation: infinite 10s blink;
 }
 .about {
   background-color: black;
   height: 80vh;
-  padding: 10.5vh;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about p {
   color: white;
@@ -113,39 +140,66 @@ ul li a {
 .b3 {
   background-color: rgb(67, 179, 67);
   height: 0.5vh;
+  animation: infinite 10s blink;
 }
 
-footer {
-  padding: 5vh;
-  background-color: black;
-  height: 10vh;
-}
 .socials{
   background-color: black ;
   padding: 5vh;
   height: 80vh;
 }
 .socials h1{
-  color: white;
+  color: rgb(18, 151, 0);
   font-family: "Orbitron", cursive;
   padding-bottom: 10vh;
 
 }
-footer p{
-  color: white;
-}
-.b4 {
-  background-color: rgb(67, 179, 67);
-  height: 0.5vh;
+
+@keyframes blink {
+  0%{
+    background-color: rgb(18, 126, 18);
+  }
+  50%{
+      background-color: rgb(0, 0, 0);
+  }
+  100%{
+      background-color: rgb(4, 129, 0);
+  }
+  
+  
 }
 .socials .gt{
   float:right;
   color: white;
-  height: 24vh;
-  width: 40%;
-  
+  height: 40vh;
+  width: 40%; 
   
 }
+
+.socials .gt a img:hover{
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px solid rgb(0, 0, 0);
+}
+.socials .gt a img{
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s;
+}
+.socials .dc a img:hover{
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px solid rgb(0, 0, 0);
+}
+.socials .dc a img{
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s;
+}
+
+
 .socials .gt p{
   padding: 6vh;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -158,7 +212,7 @@ footer p{
 
 .socials .dc{
   color: white;
-  height: 24vh;
+  height: 40vh;
   width: 40%;
   float: left;
 }
